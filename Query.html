@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Query Page</title>
+	</head>
+	<body>
+	
+		<h1 align = "CENTER">Choose any query below</h1>
+		
+		<iframe  width = 350 height = 200 align = "Right"></iframe>
+		
+		<form method = "GET" action = "ShowPredefinedQueries.do">
+
+			<input type = "radio" name = "query1" value = "fiftquery">
+			View all customers in ascending order of their customer name?
+		
+			<br>
+			<br>
+			
+			<input type = "radio" name = "query1" value = "firstquery" checked = "checked">
+			View all branches in ascending order of their branch name?
+			
+			<br/>
+			<br>
+			
+			<input type = "radio" name = "query1" value = "seventhquery">
+			View all customers in descending order of their customer surname?
+
+		
+			<br>
+			<br>
+
+			
+			<input type = "radio" name = "query1" value = "ninthquery">
+			View all customers prefering an email communicaiton method?
+
+		
+			<br>
+			<br>
+			
+			<input type = "radio" name = "query1" value = "tenthquery">
+			View all customers prefering a phone call communicaiton method?
+
+			<br>
+			<br>
+			
+			<input type = "submit" name = "sumbitbutton" value = "Get Result" >
+			
+			
+		</form>
+		
+		<br/>
+		<br/>
+		
+		
+		<iframe  width = 350 height = 200 align = "Right"></iframe>
+		
+		<form method = "GET" action = "ShowQueries.do">
+			
+			<label for = "province">Choose Province:</label></td>
+				<select>
+					<option value = "kwazulunatal">Kwa Zulu Natal</option>
+					<option value = "gauteng">Gauteng</option>
+					<option value = "limpompo">Limpompo</option>
+					<option value = "freestate">Freestate</option>
+					<option value = "mpumalanga">Mpumalanga</option>
+					<option value = "northwest">North West</option>
+					<option value = "westerncape">Western Cape</option>
+					<option value = "easterncape">Eastern Cape</option>
+					<option value = "northerncape">Northern Cape</option>
+				</select>
+				<br/>
+				<br/>
+				
+			
+			<input type = "radio" name = "query2" value = "firstquery" checked = "checked">
+			View all customers living in the chosen province?
+			
+			<br/>
+			<br>
+
+			<input type = "radio" name = "query2" value = "thirdquery">
+			View all branches located on a chosen province?
+			
+		    <br>
+			<br/>
+
+			<input type = "radio" name = "query2" value = "fiftquery">
+			View all customers who have atleast one year period?
+		
+			<br>
+			<br>
+			
+			<input type = "radio" name = "query2" value = "fiftquery">
+			View all customers with most one year period?
+		
+			<br>
+			<br>
+
+			<input type = "submit" name = "sumbitbutton" value = "Get Result" >
+			
+			
+		</form>
+		
+		<br/>
+		<br/>
+		
+		<form method = GET action="ViewCustomer.do">
+		
+			<table>
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td>
+									<label for = "personcontact " ><Strong>Enter customer Id  </Strong></label>
+								</td>
+								<td>
+									<input type = "text" name = "personcontact" size = 10 maxlength = 10>
+						
+								</td>
+								<td>
+									<input type = "submit" name = "getcustomer" value = "Get Customer" >
+								</td>
+							</tr>
+						</table>
+					</td>
+				
+					<td>
+						<iframe  width = 250 height = 100 align = "Center"></iframe>
+					</td>
+					
+					<td>
+						<iframe  width = 250 height = 100 align = "Right"></iframe>
+					</td>
+				</tr>
+			</table>
+			
+			
+		</form>
+		
+		
+		
+	</body>
+</html>

@@ -1,10 +1,16 @@
 package com.crms.service;
 
 import java.util.LinkedHashSet;
+
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
 import com.crms.model.Customer;
 
+@Transactional
 public class CustomerDAOService extends DAOService implements QueryableCustomer, Customerable{
 
+	@PersistenceContext
 	private LinkedHashSet<Customer> customers;
 	
 	public CustomerDAOService() {
@@ -18,7 +24,7 @@ public class CustomerDAOService extends DAOService implements QueryableCustomer,
 		entityManager.persist(customer.getAddress());
 		entityManager.persist(customer.getBranch());
 		entityManager.persist(customer);
-		finalizeTransaction();
+		//finalizeTransaction();
 		
 	}
 	

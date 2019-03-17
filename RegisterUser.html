@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Register New User</title>
+	</head>
+	<body>
+		<form method = "POST" action = "UserRegistration.do">
+		
+			<br/>
+			<br/>
+			<table align = "Center">
+			
+				<tr>
+					<td><label for = "firstName">First Name:</label></td>
+					<td><input type = "Text" name = "firstName" size = 30 maxlength = 30></td>
+				
+				
+					<td><label for = "surname" >Surname:</label></td>
+					<td><input type = "Text" name = "surname" size = 30 maxlength = 30></td>
+				</tr>
+				
+				<tr>
+					<td><label for = "email">Email:</label></td>
+					<td><input type = "email" name = "email" size = 30 maxlength = 30 required = "required"></td>
+				
+					<td><label for = "emailcopy">Confirm Email:</label></td>
+					<td><input type = "email" name = "emailcopy" size = 30 maxlength = 30 required = "required"></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td><label for = "username">Username :</label></td>
+					<td><input type = "text" name = "username" size = 20 maxlength = 10 required = "required"></td>
+				
+					<td><label for = "password">Create Password :</label></td>
+					<td><input type = "password" name = "password" size = 20 maxlength = 10 required = "required"></td>
+
+				</tr>
+
+				
+				<tr>
+					<td>
+						<input type = "radio" name = "role" value = "manager" checked = "checked" />Manager<br />
+						<input type = "radio" name = "role" value = "administrator" />Administrator
+					</td>
+					
+					
+				</tr>  
+
+		</table>
+			<br/>
+			<input type = "Submit" name = "register" value = "Register">
+		</form>
+		
+	</body>
+</html>

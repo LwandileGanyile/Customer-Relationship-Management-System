@@ -2,11 +2,16 @@ package com.crms.service;
 
 import java.util.LinkedHashSet;
 
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
 import com.crms.model.Address;
 
+@Transactional
 public class AddressDAOService extends DAOService{
 
-private LinkedHashSet<Address> addresses;
+	@PersistenceContext
+	private LinkedHashSet<Address> addresses;
 	
 	public AddressDAOService() {
 		

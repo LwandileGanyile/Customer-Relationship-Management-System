@@ -1,11 +1,17 @@
 package com.crms.service;
 
 import java.util.LinkedHashSet;
+
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
 import com.crms.model.Branch;
 
+@Transactional
 public class BranchDAOService extends DAOService{
 
-private LinkedHashSet<Branch> branches;
+	@PersistenceContext
+	private LinkedHashSet<Branch> branches;
 	
 	public BranchDAOService() {
 		
